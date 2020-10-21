@@ -59,16 +59,14 @@ print(min(4, 6)) #Prints out the smaller number
 
 print(round(3.2)) #rounds number
 
+from math import * #Imports a math library/module
 
+print(floor(3.7)) #Grabs lowest number i.e. chops off decimal
+print(ceil(3.7)) #Rounds number no matter what
 
+print(sqrt(36)) #finds sqrt of function = 6.0
 
-
-
-
-
-
-
-
-
-
-
+#Getting input from users
+name = input("Enter your name: ") #Allows user to input, prompt inside
+age = input("Enter your age: ")
+print("Hello " + name + "! You are " + age) 
