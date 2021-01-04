@@ -59,4 +59,4 @@ The unit tests for this project are in `test_module.py`.
 
 ###WARNING
 
-Code in file for terminal output is incomplete. Only core functions have been completed.
+Code in file for terminal output is incomplete. Only core functions have been completed with little to no testing
