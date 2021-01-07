@@ -1,6 +1,6 @@
 class Category:
 
-	def _init_(self, name):
+	def __init__(self, name):
 		self.ledger = []
 		self.name = name
 		self.total = 0
