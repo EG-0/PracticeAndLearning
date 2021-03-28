@@ -64,11 +64,11 @@ int partion(vector<int>& sort, int left, int right)
    int lessPivot = left - 1;
         
    //pivot is a middle number
-   int pivot = sort[left + (right - left) / 2];
+   int pivot = sort[right];
 
-   for (size_t i = left; i < right; ++i)
+   for (size_t i = left; i <= right - 1; ++i)
    {
-      if (sort[i] < pivot)
+      if (sort[i] <=  pivot)
       {
          ++lessPivot;
          int temp = sort[i];
@@ -76,10 +76,10 @@ int partion(vector<int>& sort, int left, int right)
          sort[lessPivot] = temp;
       }
    }
+
+   int temp = sort[lessPivot + 1];
+   sort[lessPivot + 1] = sort[right];
+   sort[right] = temp;
    
-   int temp = sort[pivot];
-   sort[pivot] = sort[lessPivot];
-   sort[lessPivot] = temp;
-        
    return lessPivot + 1;
 }
